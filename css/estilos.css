@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 2.0;
+}
+
+.header {
+    display: flex;                  /* coloca logo y menú en fila */
+    justify-content: space-between; /* separa logo a la izquierda y menú a la derecha */
+    align-items: center;            /* centra verticalmente */
+    background-color: #222;         /* color de fondo oscuro */
+    padding: 15px 30px;             /* espacio interno */
+}
+
+/* Logo con imagen + texto */
+.header .logo {
+    display: flex;                  /* imagen y texto en fila */
+    align-items: center;            /* centra verticalmente */
+    font-size: 22px;                /* tamaño de texto del logo */
+    font-weight: bold;              /* texto más grueso */
+    color: white;
+}
+
+.header .logo img {
+    width: 40px;                    /* tamaño del ícono/logo */
+    margin-right: 10px;             /* espacio entre imagen y texto */
+}
+
+/* Menú de navegación */
+.nav a {
+    font-size: 18px;                /* tamaño de letra más grande */
+    color: white;
+    text-decoration: none;          /* quita subrayado */
+    margin: 0 15px;                 /* espacio entre enlaces */
+    transition: color 0.3s;         /* animación suave */
+}
+
+.nav a:hover {
+    color: #00ff99;                 /* cambia color al pasar el mouse */
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+/* Configuración de mi foto*/
+.hero .avatar {
+    width: 200px;        /* tamaño de la foto */
+    border-radius: 4%;  /* convierte la foto en un círculo */
+    margin-bottom: 20px; /* espacio debajo de la foto */
+    border: 3px solid #fff; /* opcional: borde blanco alrededor */
+}
+
+.sobre-mi {
+    display: flex;                  /* Dos columnas */
+    justify-content: space-around;  /* Espacio entre columnas */
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.sobre-mi .columna {
+    width: 45%;                     /* Cada columna ocupa casi la mitad */
+}
+
+.sobre-mi ul li img {
+    width: 20px;                    /* Tamaño uniforme de íconos */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.sobre-mi p {
+    text-align: justify;
+}
+
+.galeria {
+    display: grid;                 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;                      /* Espacio entre tarjetas */
+    padding: 40px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;             /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .redes a img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
